@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WAVE</title>
+	<script type="text/javascript" src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<script type="text/javascript">
+
+		// Waiting for page to load
+		$(document).ready(function() {
+			
+			// Connecting to the socket
+			var socket = io.connect("http://127.0.0.1:8080", {secure: true});
+			var switch_on_btn = $("#switch");
+			var state = 0;
+			
+			// Listening for switch
+			switch_on_btn.on('click', function() {
+				
+				switch (state) {
+					case 0:
+						// Sending switch request
+						socket.emit('control', {stat: "turn_on"});
+						state = 1;
+						break;
+					case 1:
+						// Sending switch request
+						socket.emit('control', {stat: "turn_off"});
+						state = 0;
+						break;
+				}
+				
+			});
+			
+		});
+
+</script>
+
+	<body>
+		<h1>Welcome to NodeJS Controlled Light</h1><hr />
+		<p>Control the LED below</p>
+		<input type="submit" value="Turn Light On" id="switch">
+	</body>
+</html>

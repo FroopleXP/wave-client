@@ -1,0 +1,161 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	background-color: #434A54;
+	min-width: 800px;
+}
+
+hr {
+	margin: 25px 0px 25px 0px;
+	border: 1px solid;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 5px 0px 5px 0px;
+	font-family: 'Arvo', serif;
+}
+
+a {
+	text-decoration: none;
+	color: #AC92EC;
+	font-weight: bold;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #967ADC;
+}
+
+.logo {
+	font-family: 'Pacifico', cursive !important; 
+	color: #fff;
+	font-weight: bold;
+}
+
+.align-left {
+	float: left;
+	margin-top: -5px;
+}
+
+.align-right {
+	float: right;
+	margin-top: -5px;
+}
+
+.menu_container a {
+	text-decoration: none;
+	color: #aaa;
+}
+
+.menu_container > #menu_list_container {
+	list-style: none;
+	padding: 15px;
+	margin: 0px;
+	background-color: #4fc1e9;
+	border-bottom: 2px solid #3bafda;
+}
+
+.menu_container > #menu_list_container > a > li {
+	font-family: 'Arvo', serif;
+	width: auto;
+	display: inline;
+	padding: 10px;
+	color: #F5F7FA;
+	font-weight: bold;
+	border-radius: 3px;
+	outline: none;
+	-webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.menu_container > #menu_list_container > a > li:hover {
+	text-transform: 2px 2px #5D9CEC;
+	background-color: #3bafda;
+	cursor: pointer;
+}
+
+.page_container_header h1 {
+	text-shadow: 3px 3px #37BC9B;
+}
+
+.page_container_header {
+	margin: 0px 12% 0px 12%;
+	padding: 30px 0px 30px 50px;
+	background-color: #48CFAD;
+	border-bottom: 2px solid #37BC9B;
+	color: #FFF;
+	font-family: 'Arvo', serif;
+	font-weight: bold;
+}
+
+.page_container {
+	margin: 0px 12% 0px 12%;
+	padding: 40px 50px 40px 50px;
+	background-color: #FFF;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.table_container {
+	padding: 10px;
+}
+
+.table_container tr td {
+	padding: 5px;
+}
+
+/* Button styles */
+/* Master */
+.btn {
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding: 5px;
+	font-weight: bold;
+	color: #F5F7FA;
+}
+
+/*RED*/
+.btn_red {
+	background-color: #ED5565;
+	border: 2px solid #DA4453;
+}
+
+.btn_red:hover {
+	cursor: pointer;
+	background-color: #DA4453;
+}
+
+/*YELLOW*/
+.btn_yellow {
+	background-color: #FFCE54;
+	border: 2px solid #F6BB42;
+}
+
+.btn_yellow:hover {
+	cursor: pointer;
+	background-color: #F6BB42;
+}
+
+input[type="text"], input[type="password"] {
+	padding: 10px;
+	border: 2px solid #E6E9ED;
+	background-color: #F5F7FA;
+	border-radius: 3px;
+	width: 302px;
+}
